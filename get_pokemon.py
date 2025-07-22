@@ -21,8 +21,11 @@ for stat in pokemon_data['stats']: # list of dictionaries that contain different
         hp = stat['base_stat'] # the pokemon's actual hp stat is assigned to hp variable
         # print(f"{choice}'s HP is: {hp}")
 
-move = pokemon_data["moves"][0]["move"]["name"] # retrieving the pokemon's move name
-# print(move)
+move_list = []
+for move in pokemon_data["moves"][0:4]: # retrieving the pokemon's move name
+    move_name = move["move"]["name"]
+    move_list.append(move_name)
+#print(move_list)
 
 player_pokemon = {'pokemon': choice, 'hp': hp, 'move_name': move}
 # print(player_pokemon)
