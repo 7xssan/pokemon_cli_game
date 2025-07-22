@@ -19,4 +19,10 @@ pokemon_data = json.loads(response.text)
 for stat in pokemon_data['stats']: # list of dictionaries that contain different stats
     if stat['stat']['name'] == 'hp': # grabbing just the hp stat
         hp = stat['base_stat'] # the pokemon's actual hp stat is assigned to hp variable
-        print(f"{choice}'s HP is: {hp}")
+        # print(f"{choice}'s HP is: {hp}")
+
+move = pokemon_data["moves"][0]["move"]["name"] # retrieving the pokemon's move name
+# print(move)
+
+player_pokemon = {'pokemon': choice, 'hp': hp, 'move_name': move}
+# print(player_pokemon)
