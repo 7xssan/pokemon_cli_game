@@ -33,12 +33,12 @@ weight_formatted = weight / 10
 # get hp
 hp = int(pokemon_data["stats"][0]["base_stat"])
 
+# get one move
 
-# Print the pokemon's data
-# print('Name: {}'.format(pokemon_data['name']))
-# print('Weight: {}'.format(weight_formatted) + "(kgs)")
-# print('Height: {}'.format(height_formatted) + "(m)")
-# print('Ability: {}'.format(ability['name']))
-# print('HP: {}'.format(hp))
+moves = []
 
-chosen_pokemon = {"Pokemon": pokemon_data["name"], "Height": height_formatted, "Weight": weight_formatted, "HP": hp}
+for move in pokemon_data["moves"][0:4]:
+    moves.append(move["move"]["name"])
+
+chosen_pokemon = {"pokemon": pokemon_data["name"], "hp": hp, "moves": moves}
+

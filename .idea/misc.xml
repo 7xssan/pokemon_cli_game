@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Black">
+<<<<<<< HEAD
     <option name="sdkName" value="Python 3.9" />
   </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.13 (Sparta_PyProjects)" project-jdk-type="Python SDK" />
+=======
+    <option name="sdkName" value="Python 3.13 (tech508_python_learning)" />
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.13 (pokemon_cli_game)" project-jdk-type="Python SDK" />
+>>>>>>> f9c50e0c2841217189cbb70839bff056c6a20ce5
 </project>
